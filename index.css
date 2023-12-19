@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  -o-user-select:none;
+}
+
+nav > ul,
+nav > ul > li {
+  outline: 0;
+}
+
+nav > ul > li > a {
+ text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #aea4e3, #d3ffe8);
+}
+
+/* MAIN MENU */
+
+.main-menu {
+  position:fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 60px;
+  overflow:hidden;
+  background: #0009;
+  transition: width .05s linear;
+  -webkit-transition: width .05s linear;
+  z-index: 10;
+  padding-top: 10px;
+}
+
+.main-menu:hover {
+  width: 180px;
+  overflow:visible;
+}
+
+.main-menu > ul > li {
+  position: relative;
+  display: block;
+  width: 180px;
+}
+
+.main-menu > ul > li > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color:#999;
+  font-size: 1rem;
+  transition:all 0.1s linear;
+  -webkit-transition:all 0.1s linear;
+  padding: 10px 0;
+}
+
+.nav-icon {
+  width: 60px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-text {
+  width: 120px;
+  height: 20px;
+  font-family: "Mulish", sans-serif;
+}
+
+.logout {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.main-menu li:hover > a, .main-menu li.active > a, .main-menu li > a:focus {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(94, 94, 94, 0.7);
+}
+
+.todo {
+	padding-left: 80px;
+	
+}
+.logo {
+	max-width: 10%;
+	max-height: 10%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
